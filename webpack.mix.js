@@ -18,3 +18,4 @@ mix.js('resources/js/app.js', 'public/js')
 
 mix.js('resources/js/vue.js', 'public/js')
     .vue({ version: 3 })
+    .alias({ '@': 'resources/js' })
