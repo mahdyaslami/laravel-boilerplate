@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mix = require('laravel-mix')
 
 /*
  |--------------------------------------------------------------------------
@@ -11,10 +11,14 @@ const mix = require('laravel-mix');
  |
  */
 
+mix.webpackConfig(
+    require('./webpack.config')
+)
+
 mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
-    ]);
+    ])
 
 mix.js('resources/js/vue.js', 'public/js')
     .vue({ version: 3 })

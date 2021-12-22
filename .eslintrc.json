@@ -17,6 +17,13 @@
     "plugins": [
         "vue"
     ],
+    "settings": {
+        "import/resolver": {
+            "webpack": {
+                "config": "webpack.config"
+            }
+        }
+    },
     "rules": {
         "comma-dangle": [
             "warn",

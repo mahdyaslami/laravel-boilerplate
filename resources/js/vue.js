@@ -6,5 +6,5 @@ createApp({
     components: {
         LaravelLinks,
         LaravelLogo,
-    }
+    },
 }).mount('#app')
