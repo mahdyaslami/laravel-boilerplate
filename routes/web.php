@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/vue', function () {
-    return view('welcome-vue');
+    return view('vue');
 });
